@@ -328,265 +328,36 @@ textarea:focus{
 
 /* --- Appearance --- */
 .appearanceInline{
-    display:flex;
-    align-items:flex-end;
-    gap:10px;
-    margin-top:2px;
-}
-.appearanceInline .item{
-    display:flex;
-    align-items:center;
-    gap:4px;
-}
-.appearanceInline label{
-    margin:0;
-    white-space:nowrap;
-}
-.appearanceInline input{
-    padding:6px;
-}
-.w-hair{width:130px;}
-.w-xs{width:52px;}
-.w-mid{width:110px;}
-
-/* memo */
-textarea{
-    width:100%;
-    min-height:165px;
-    resize:vertical;
-}
-
-@media(max-width:800px){
-  .headerButtons{width:100%;}
-  .headerButtons button{flex:1;}
-  .appearanceInline{
-      flex-wrap:wrap;
-      align-items:center;
-  }
-}
-
-
-/* ===== 外見 入力欄を大きく ===== */
-.appearanceInline{
-    display:flex;
-    width:100%;
-    gap:10px;
-    align-items:center;
-}
-
-.appearanceInline .item{
-    display:flex;
-    align-items:center;
-    gap:4px;
-}
-
-/* 入力欄を大きくする */
-.appearanceInline input{
-    flex:1;
-    width:100%;
-    min-width:90px;
-}
-
-/* 項目ごとの目安 */
-.appearanceInline .w-hair{min-width:150px;}
-.appearanceInline .w-xs{min-width:90px;}
-.appearanceInline .w-mid{min-width:170px;}
-
-/* 行全体で余白を使い切る */
-.appearanceInline .item:nth-child(1){flex:2.2;}
-.appearanceInline .item:nth-child(2){flex:1.2;}
-.appearanceInline .item:nth-child(3){flex:1.2;}
-.appearanceInline .item:nth-child(4){flex:1.2;}
-.appearanceInline .item:nth-child(5){flex:2.3;}
-.appearanceInline .item:nth-child(6){flex:2.6;}
-
-
-
-
-
-/* --- 好き・嫌い・口調（調整） --- */
-.characterPreferenceGrid{
-    display:grid;
-    grid-template-columns:1fr 1fr 2fr;
-    gap:12px;
-    margin-top:2px;
     width:100%;
 }
 
-.characterPreferenceGrid .inputGroup{
-    display:flex;
-    flex-direction:column;
-    min-width:0;
-}
-
-.characterPreferenceGrid label{
-    margin-bottom:2px;
-}
-
-.characterPreferenceGrid input{
-    width:100%;
-}
-
-/* =========================
-   スマホ対応
-========================= */
-@media (max-width: 768px){
-
-    .container{
-        padding:12px;
-    }
-
-    header{
-        flex-direction:column;
-        align-items:stretch;
-        gap:12px;
-    }
-
-    h1{
-        font-size:32px;
-        text-align:center;
-        line-height:1.2;
-    }
-
-    .headerButtons{
-        width:100%;
-    }
-
-    .headerButtons button{
-        flex:1;
-    }
-
-    .row,
-    .characterGrid,
-    .characterMiniGrid,
-    .characterPreferenceGrid,
-    .tripleGrid{
-
-        display:flex;
-        flex-direction:column;
-
-    }
-
-    .appearanceInline{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:12px;
-        align-items:start;
-    }
-
-    .appearanceInline .item,
-    .appearanceInline .item:nth-child(1),
-    .appearanceInline .item:nth-child(2),
-    .appearanceInline .item:nth-child(3),
-    .appearanceInline .item:nth-child(4),
-    .appearanceInline .item:nth-child(5),
-    .appearanceInline .item:nth-child(6){
-        display:flex;
-        flex-direction:column;
-        align-items:stretch;
-        flex:none !important;
-        width:auto !important;
-        min-width:0 !important;
-    }
-
-    .appearanceInline input,
-    .appearanceInline .w-hair,
-    .appearanceInline .w-xs,
-    .appearanceInline .w-mid{
-        width:100% !important;
-        min-width:0 !important;
-    }
-}
-
-
-
-/* スマホ：外見入力欄をカード幅いっぱいに使う */
-@media (max-width:768px){
-
-  .appearanceRow{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-    width:100%;
-  }
-
-  .appearanceRow .item{
-    display:flex;
-    flex-direction:column;
-    width:100%;
-    min-width:0;
-  }
-
-  .appearanceRow label{
-    margin-bottom:4px;
-  }
-
-  .appearanceRow input,
-  .appearanceRow .w-hair,
-  .appearanceRow .w-xs,
-  .appearanceRow .w-mid{
-    width:100% !important;
-    max-width:100%;
-    min-width:0 !important;
-    flex:none;
-  }
-}
-
-
-
-/* ===== Appearance final mobile override ===== */
 .appearanceRow{
     display:flex;
     gap:10px;
     margin-bottom:10px;
 }
+
 .appearanceRow:last-child{
     margin-bottom:0;
 }
+
 .appearanceRow .item{
     flex:1;
     min-width:0;
+    display:flex;
+    align-items:center;
+    gap:6px;
 }
 
-@media (max-width:768px){
-
-  .appearanceInline{
-    display:block !important;
-    width:100%;
-  }
-
-  .appearanceRow{
-    display:grid !important;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-    width:100%;
-  }
-
-  .appearanceRow .item{
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:stretch !important;
-    width:100% !important;
-    min-width:0 !important;
-    flex:1 1 0 !important;
-  }
-
-  .appearanceRow label{
-    margin:0 0 4px 0 !important;
-    white-space:normal !important;
-  }
-
-  .appearanceRow input{
-    width:100% !important;
-    min-width:0 !important;
-    max-width:none !important;
-    flex:none !important;
-  }
-
-  .appearanceRow .w-hair,
-  .appearanceRow .w-xs,
-  .appearanceRow .w-mid{
-    width:100% !important;
-    min-width:0 !important;
-  }
+.appearanceRow label{
+    white-space:nowrap;
+    margin:0;
 }
+
+.appearanceRow input{
+    flex:1;
+    width:100%;
+    min-width:0;
+    padding:6px;
+}
+
