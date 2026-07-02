@@ -328,79 +328,41 @@ textarea:focus{
 
 /* --- Appearance --- */
 .appearanceInline{
-    width:100%;
-}
-
-.appearanceRow{
     display:flex;
+    align-items:flex-end;
     gap:10px;
-    margin-bottom:10px;
+    margin-top:2px;
 }
-
-.appearanceRow:last-child{
-    margin-bottom:0;
-}
-
-.appearanceRow .item{
-    flex:1;
+.appearanceInline .item{
     display:flex;
     align-items:center;
     gap:4px;
-    min-width:0;
 }
-
-.appearanceRow label{
+.appearanceInline label{
     margin:0;
     white-space:nowrap;
 }
-
-.appearanceRow input{
-    flex:1;
-    width:100%;
-    min-width:0;
+.appearanceInline input{
     padding:6px;
 }
+.w-hair{width:130px;}
+.w-xs{width:52px;}
+.w-mid{width:110px;}
 
-.w-hair,.w-xs,.w-mid{
-    width:100%;
-}
-
+/* memo */
 textarea{
     width:100%;
     min-height:165px;
     resize:vertical;
 }
 
-@media (max-width:768px){
-
+@media(max-width:800px){
+  .headerButtons{width:100%;}
+  .headerButtons button{flex:1;}
   .appearanceInline{
-      display:flex;
       flex-wrap:wrap;
-      gap:12px;
+      align-items:center;
   }
-
-  .appearanceInline .item{
-      display:flex;
-      flex-direction:column;
-      align-items:stretch;
-      flex:0 0 calc(50% - 6px);
-      min-width:0;
-  }
-
-  .appearanceInline label{
-      margin:0 0 4px 0;
-      white-space:normal;
-  }
-
-  .appearanceInline input,
-  .w-hair,
-  .w-xs,
-  .w-mid{
-      width:100%;
-      min-width:0;
-      max-width:100%;
-  }
-
 }
 
 
@@ -426,47 +388,4 @@ textarea{
 .characterPreferenceGrid input{
     width:100%;
 }
-
-/* =========================
-   スマホ対応
-========================= */
-@media (max-width: 768px){
-
-    .container{
-        padding:12px;
-    }
-
-    header{
-        flex-direction:column;
-        align-items:stretch;
-        gap:12px;
-    }
-
-    h1{
-        font-size:32px;
-        text-align:center;
-        line-height:1.2;
-    }
-
-    .headerButtons{
-        width:100%;
-    }
-
-    .headerButtons button{
-        flex:1;
-    }
-
-    .row,
-    .characterGrid,
-    .characterMiniGrid,
-    .characterPreferenceGrid,
-    .tripleGrid{
-
-        display:flex;
-        flex-direction:column;
-
-    }
-}
-
-
 
