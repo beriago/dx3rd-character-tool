@@ -328,80 +328,80 @@ textarea:focus{
 
 /* --- Appearance --- */
 .appearanceInline{
-    display:flex;
-    align-items:flex-end;
-    gap:10px;
-    margin-top:2px;
+    width:100%;
 }
-.appearanceInline .item{
+
+.appearanceRow{
+    display:flex;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.appearanceRow:last-child{
+    margin-bottom:0;
+}
+
+.appearanceRow .item{
+    flex:1;
     display:flex;
     align-items:center;
     gap:4px;
+    min-width:0;
 }
-.appearanceInline label{
+
+.appearanceRow label{
     margin:0;
     white-space:nowrap;
 }
-.appearanceInline input{
+
+.appearanceRow input{
+    flex:1;
+    width:100%;
+    min-width:0;
     padding:6px;
 }
-.w-hair{width:130px;}
-.w-xs{width:52px;}
-.w-mid{width:110px;}
 
-/* memo */
+.w-hair,.w-xs,.w-mid{
+    width:100%;
+}
+
 textarea{
     width:100%;
     min-height:165px;
     resize:vertical;
 }
 
-@media(max-width:800px){
-  .headerButtons{width:100%;}
-  .headerButtons button{flex:1;}
+@media (max-width:768px){
+
   .appearanceInline{
+      display:flex;
       flex-wrap:wrap;
-      align-items:center;
+      gap:12px;
   }
+
+  .appearanceInline .item{
+      display:flex;
+      flex-direction:column;
+      align-items:stretch;
+      flex:0 0 calc(50% - 6px);
+      min-width:0;
+  }
+
+  .appearanceInline label{
+      margin:0 0 4px 0;
+      white-space:normal;
+  }
+
+  .appearanceInline input,
+  .w-hair,
+  .w-xs,
+  .w-mid{
+      width:100%;
+      min-width:0;
+      max-width:100%;
+  }
+
 }
-
-
-/* ===== 外見 入力欄を大きく ===== */
-.appearanceInline{
-    display:flex;
-    width:100%;
-    gap:10px;
-    align-items:center;
-}
-
-.appearanceInline .item{
-    display:flex;
-    align-items:center;
-    gap:4px;
-}
-
-/* 入力欄を大きくする */
-.appearanceInline input{
-    flex:1;
-    width:100%;
-    min-width:90px;
-}
-
-/* 項目ごとの目安 */
-.appearanceInline .w-hair{min-width:150px;}
-.appearanceInline .w-xs{min-width:90px;}
-.appearanceInline .w-mid{min-width:170px;}
-
-/* 行全体で余白を使い切る */
-.appearanceInline .item:nth-child(1){flex:2.2;}
-.appearanceInline .item:nth-child(2){flex:1.2;}
-.appearanceInline .item:nth-child(3){flex:1.2;}
-.appearanceInline .item:nth-child(4){flex:1.2;}
-.appearanceInline .item:nth-child(5){flex:2.3;}
-.appearanceInline .item:nth-child(6){flex:2.6;}
-
-
-
 
 
 /* --- 好き・嫌い・口調（調整） --- */
@@ -466,30 +466,7 @@ textarea{
         flex-direction:column;
 
     }
-
-    .appearanceInline{
-
-        display:flex;
-        flex-direction:column;
-        align-items:stretch;
-
-    }
-
-    .appearanceInline .item{
-
-        display:flex;
-        flex-direction:column;
-        align-items:stretch;
-        flex:none;
-        width:100%;
-
-    }
-
-    .appearanceInline input{
-
-        min-width:0;
-        width:100%;
-
-    }
-
 }
+
+
+
