@@ -426,3 +426,68 @@ textarea{
 .characterPreferenceGrid input{
     width:100%;
 }
+
+/* =========================
+   スマホ対応
+========================= */
+@media (max-width: 768px){
+
+    .container{
+        padding:12px;
+    }
+
+    header{
+        flex-direction:column;
+        align-items:stretch;
+        gap:12px;
+    }
+
+    h1{
+        font-size:32px;
+        text-align:center;
+        line-height:1.2;
+    }
+
+    .headerButtons{
+        width:100%;
+    }
+
+    .headerButtons button{
+        flex:1;
+    }
+
+    .row,
+    .characterGrid,
+    .characterMiniGrid,
+    .characterPreferenceGrid,
+    .tripleGrid{
+
+        display:flex;
+        flex-direction:column;
+
+    }
+
+    .appearanceInline{
+
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+
+    }
+
+    .appearanceInline .item{
+
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+
+    }
+
+    .appearanceInline input{
+
+        min-width:0;
+        width:100%;
+
+    }
+
+}
