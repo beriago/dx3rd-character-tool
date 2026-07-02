@@ -497,3 +497,30 @@ textarea{
         min-width:0 !important;
     }
 }
+
+
+/* スマホ時の外見2列 */
+.appearanceRow{
+    display:flex;
+    gap:10px;
+    margin-bottom:8px;
+}
+.appearanceRow .item{flex:1;}
+
+@media (max-width:768px){
+  .appearanceInline{
+    display:block !important;
+  }
+  .appearanceRow{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+  .appearanceRow .item{
+    min-width:0;
+  }
+  .appearanceRow input{
+    width:100%;
+    min-width:0;
+  }
+}
