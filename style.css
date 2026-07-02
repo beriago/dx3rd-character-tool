@@ -531,3 +531,62 @@ textarea{
     flex:none;
   }
 }
+
+
+
+/* ===== Appearance final mobile override ===== */
+.appearanceRow{
+    display:flex;
+    gap:10px;
+    margin-bottom:10px;
+}
+.appearanceRow:last-child{
+    margin-bottom:0;
+}
+.appearanceRow .item{
+    flex:1;
+    min-width:0;
+}
+
+@media (max-width:768px){
+
+  .appearanceInline{
+    display:block !important;
+    width:100%;
+  }
+
+  .appearanceRow{
+    display:grid !important;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    width:100%;
+  }
+
+  .appearanceRow .item{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:stretch !important;
+    width:100% !important;
+    min-width:0 !important;
+    flex:1 1 0 !important;
+  }
+
+  .appearanceRow label{
+    margin:0 0 4px 0 !important;
+    white-space:normal !important;
+  }
+
+  .appearanceRow input{
+    width:100% !important;
+    min-width:0 !important;
+    max-width:none !important;
+    flex:none !important;
+  }
+
+  .appearanceRow .w-hair,
+  .appearanceRow .w-xs,
+  .appearanceRow .w-mid{
+    width:100% !important;
+    min-width:0 !important;
+  }
+}
