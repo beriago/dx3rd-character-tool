@@ -329,6 +329,16 @@ textarea:focus{
 /* --- Appearance --- */
 .appearanceInline{
     width:100%;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr 2fr 2fr;
+    gap:12px;
+    align-items:end;
+}
+
+.appearanceInline .item{
+    display:flex;
+    flex-direction:column;
+    min-width:0;
 }
 
 .appearanceRow{
@@ -462,7 +472,7 @@ textarea{
 
     .appearanceInline{
         display:grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr 1fr 1fr;
         gap:12px;
         align-items:start;
     }
