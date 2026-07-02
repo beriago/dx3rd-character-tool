@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DX3rd キャラクター作成支援</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>DX3rd キャラクター作成支援</h1>
+<div class="headerButtons">
+<button id="saveBtn">保存</button>
+<button id="loadBtn">読込</button>
+<button id="resetBtn">初期化</button>
+</div>
+</header>
+<!-- 基本情報 -->
+<section class="card">
+<h2>基本情報</h2>
+<div class="row">
+<div class="inputGroup">
+<label>ワークス</label>
+<select id="workSelect">
+<option value="">選択してください</option>
+</select>
+</div>
+<div class="inputGroup">
+<label>カヴァー</label>
+<input id="cover" placeholder="会社員・高校生など" type="text"/>
+</div>
+</div>
+<div class="row syndromeRow">
+<div class="inputGroup">
+<label>シンドローム①</label>
+<select id="syndrome1">
+<option>なし</option>
+</select>
+</div>
+<div class="inputGroup">
+<label>シンドローム②</label>
+<select id="syndrome2">
+<option>なし</option>
+</select>
+</div>
+<div class="inputGroup">
+<label>シンドローム③</label>
+<select id="syndrome3">
+<option>なし</option>
+</select>
+</div>
+</div>
+</section>
+<!-- 3カラム -->
+<section class="tripleGrid">
+<!-- 能力 -->
+<div class="card">
+<h2>能力値</h2>
+<table class="statusTable">
+<tr>
+<td>肉体</td>
+<td id="bodyValue">0</td>
+</tr>
+<tr>
+<td>感覚</td>
+<td id="senseValue">0</td>
+</tr>
+<tr>
+<td>精神</td>
+<td id="mindValue">0</td>
+</tr>
+<tr>
+<td>社会</td>
+<td id="socialValue">0</td>
+</tr>
+</table>
+</div>
+<!-- 技能 -->
+<div class="card">
+<h2>初期技能</h2>
+<ul id="skillBox"></ul>
+</div>
+<!-- ライフパス -->
+<div class="card">
+<h2>ライフパス</h2>
+<div class="inputGroup">
+<label>出自</label>
+<select id="birth"></select>
+</div>
+<div class="inputGroup">
+<label>所属組織</label>
+<select id="experienceType">
+<option value="student">学生</option>
+<option value="general">一般社会</option>
+<option value="underworld">裏社会</option>
+<option value="ugn">UGN</option>
+<option value="fh">FH</option>
+<option value="rb">RB</option>
+</select>
+<label>経験</label>
+<select id="experience"></select>
+</div>
+<div class="inputGroup">
+<label id="encounterLabel">邂逅</label>
+<select id="encounter"></select>
+</div>
+<div class="inputGroup">
+<label>覚醒</label>
+<select id="awakening"></select>
+</div>
+<div class="inputGroup">
+<label id="impulseLabel">衝動</label>
+<select id="impulse"></select>
+</div>
+</div>
+</section>
+<!-- キャラクター -->
+<section class="card">
+<h2>キャラクター</h2>
+<div class="characterGrid">
+<div class="inputGroup name">
+<label>名前</label>
+<input id="name" type="text"/>
+</div>
+<div class="inputGroup codename">
+<label>コードネーム</label>
+<input id="codename" type="text"/>
+</div>
+</div>
+<div class="characterMiniGrid">
+<div class="inputGroup small">
+<label>年齢</label>
+<input id="age" type="text"/>
+</div>
+<div class="inputGroup small">
+<label>性別</label>
+<input id="sex" type="text"/>
+</div>
+<div class="inputGroup small">
+<label>身長</label>
+<input id="height" type="text"/>
+</div>
+<div class="inputGroup small">
+<label>体重</label>
+<input id="weight" type="text"/>
+</div>
+</div>
+<div class="characterPreferenceGrid">
+<div class="inputGroup">
+<label>好き</label>
+<input id="like" type="text"/>
+</div>
+<div class="inputGroup">
+<label>嫌い</label>
+<input id="dislike" type="text"/>
+</div>
+<div class="inputGroup">
+<label>口調</label>
+<input id="speech" type="text"/>
+</div>
+</div>
+</section>
+<!-- 外見 -->
+<section class="card">
+<h2>外見</h2>
+<div class="appearanceInline">
+<div class="item"><label>髪型</label><input class="w-hair" id="hairStyle" type="text"/></div>
+<div class="item"><label>髪色</label><input class="w-xs" id="hairColor" type="text"/></div>
+<div class="item"><label>瞳</label><input class="w-xs" id="eyeColor" type="text"/></div>
+<div class="item"><label>肌</label><input class="w-xs" id="skinColor" type="text"/></div>
+<div class="item"><label>服装</label><input class="w-mid" id="clothing" type="text"/></div>
+<div class="item"><label>モチーフ</label><input class="w-mid" id="motif" type="text"/></div>
+</div>
+</section>
+<!-- メモ -->
+<section class="card">
+<h2>設定メモ</h2>
+<textarea id="memo"></textarea>
+</section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

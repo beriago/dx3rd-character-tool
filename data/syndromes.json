@@ -1,0 +1,82 @@
+[
+  {
+    "id": "angel_halo",
+    "name": "エンジェルハィロゥ",
+    "ability": { "body": 0, "sense": 3, "mind": 1, "social": 0 }
+  },
+  {
+    "id": "balor",
+    "name": "バロール",
+    "ability": { "body": 0, "sense": 1, "mind": 2, "social": 1 }
+  },
+  {
+    "id": "black_dog",
+    "name": "ブラックドッグ",
+    "ability": { "body": 2, "sense": 1, "mind": 1, "social": 0 }
+  },
+  {
+    "id": "blam_stoker",
+    "name": "ブラム＝ストーカー",
+    "ability": { "body": 1, "sense": 2, "mind": 1, "social": 0 }
+  },
+  {
+    "id": "chimaera",
+    "name": "キュマイラ",
+    "ability": { "body": 3, "sense": 0, "mind": 0, "social": 1 }
+  },
+  {
+    "id": "exile",
+    "name": "エグザイル",
+    "ability": { "body": 2, "sense": 1, "mind": 0, "social": 1 }
+  },
+  {
+    "id": "hanuman",
+    "name": "ハヌマーン",
+    "ability": { "body": 1, "sense": 1, "mind": 1, "social": 1 }
+  },
+  {
+    "id": "morpheus",
+    "name": "モルフェウス",
+    "ability": { "body": 1, "sense": 2, "mind": 0, "social": 1 }
+  },
+  {
+    "id": "neumann",
+    "name": "ノイマン",
+    "ability": { "body": 0, "sense": 0, "mind": 3, "social": 1 }
+  },
+  {
+    "id": "orcus",
+    "name": "オルクス",
+    "ability": { "body": 0, "sense": 1, "mind": 1, "social": 2 }
+  },
+  {
+    "id": "salamandra",
+    "name": "サラマンダー",
+    "ability": { "body": 2, "sense": 0, "mind": 1, "social": 1 }
+  },
+  {
+    "id": "solaris",
+    "name": "ソラリス",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 3 }
+  },
+  {
+    "id": "ouroboros",
+    "name": "ウロボロス",
+    "ability": { "body": 1, "sense": 1, "mind": 2, "social": 0 }
+  },
+  {
+    "id": "azathoth",
+    "name": "アザトース",
+    "ability": { "body": 1, "sense": 0, "mind": 3, "social": 0 }
+  },
+  {
+    "id": "mistilteinn",
+    "name": "ミストルティン",
+    "ability": { "body": 2, "sense": 2, "mind": 0, "social": 0 }
+  },
+  {
+    "id": "gleipnir",
+    "name": "グレイプニル",
+    "ability": { "body": 1, "sense": 0, "mind": 2, "social": 1 }
+  }
+]

@@ -1,0 +1,428 @@
+/* ---------- 全体 ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#F3F4F6;
+
+    color:#333;
+
+    font-family:
+    "Yu Gothic UI",
+    "Meiryo",
+    sans-serif;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+}
+
+
+/* ---------- コンテナ ---------- */
+
+.container{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:20px;
+
+}
+
+
+/* ---------- ヘッダー ---------- */
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+h1{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+.headerButtons{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+
+/* ---------- ボタン ---------- */
+
+button{
+
+    border:none;
+
+    background:#4A6FA5;
+
+    color:white;
+
+    padding:7px 14px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    font-size:13px;
+
+}
+
+button:hover{
+
+    background:#365785;
+
+}
+
+
+/* ---------- カード ---------- */
+
+.card{
+
+    background:white;
+
+    border:1px solid #D6DCE5;
+
+    border-radius:10px;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+}
+
+
+/* ---------- タイトル ---------- */
+
+h2{
+
+    margin-bottom:12px;
+
+    font-size:15px;
+
+}
+
+
+/* ---------- 横並び ---------- */
+
+.row{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:10px;
+
+}
+
+.syndromeRow{
+
+    margin-top:10px;
+
+}
+
+
+/* ---------- 入力 ---------- */
+
+.inputGroup{
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+
+
+.inputGroup.name{
+
+    flex:2;
+
+}
+
+.inputGroup.codename{
+
+    flex:3;
+
+}
+
+.characterMiniGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:12px;
+
+}
+.inputGroup.small{
+
+    flex:1;
+
+    min-width:70px;
+
+}
+
+.inputGroup.full{
+
+    flex:100%;
+
+}
+
+label{
+
+    margin-bottom:4px;
+
+    font-size:12px;
+
+    color:#666;
+
+}
+
+
+input,
+select,
+textarea{
+
+    border:1px solid #C9CED8;
+
+    border-radius:6px;
+
+    background:white;
+
+    padding:8px;
+
+    font-size:13px;
+
+}
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:#4A6FA5;
+
+}
+
+
+/* ---------- 3カラム ---------- */
+
+.tripleGrid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    0.9fr
+    1.1fr
+    2fr;
+
+    gap:15px;
+
+    margin-bottom:15px;
+
+}
+
+
+/* ---------- 能力 ---------- */
+
+.statusTable{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.statusTable td{
+
+    padding:6px;
+
+    border-bottom:1px solid #EEE;
+
+}
+
+.statusTable td:last-child{
+
+    text-align:right;
+
+    font-weight:bold;
+
+}
+
+
+/* ---------- 技能 ---------- */
+
+#skillBox{
+
+    list-style:none;
+
+}
+
+#skillBox li{
+
+    padding:5px 0;
+
+    border-bottom:1px solid #EEE;
+
+}
+
+
+/* ---------- キャラ ---------- */
+
+.characterGrid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+
+
+
+
+
+/* --- Header buttons --- */
+.headerButtons{
+    display:flex;
+    gap:8px;
+    width:auto;
+}
+.headerButtons button{
+    min-width:84px;
+    padding:5px 14px;
+    flex:none;
+}
+
+/* --- Appearance --- */
+.appearanceInline{
+    display:flex;
+    align-items:flex-end;
+    gap:10px;
+    margin-top:2px;
+}
+.appearanceInline .item{
+    display:flex;
+    align-items:center;
+    gap:4px;
+}
+.appearanceInline label{
+    margin:0;
+    white-space:nowrap;
+}
+.appearanceInline input{
+    padding:6px;
+}
+.w-hair{width:130px;}
+.w-xs{width:52px;}
+.w-mid{width:110px;}
+
+/* memo */
+textarea{
+    width:100%;
+    min-height:165px;
+    resize:vertical;
+}
+
+@media(max-width:800px){
+  .headerButtons{width:100%;}
+  .headerButtons button{flex:1;}
+  .appearanceInline{
+      flex-wrap:wrap;
+      align-items:center;
+  }
+}
+
+
+/* ===== 外見 入力欄を大きく ===== */
+.appearanceInline{
+    display:flex;
+    width:100%;
+    gap:10px;
+    align-items:center;
+}
+
+.appearanceInline .item{
+    display:flex;
+    align-items:center;
+    gap:4px;
+}
+
+/* 入力欄を大きくする */
+.appearanceInline input{
+    flex:1;
+    width:100%;
+    min-width:90px;
+}
+
+/* 項目ごとの目安 */
+.appearanceInline .w-hair{min-width:150px;}
+.appearanceInline .w-xs{min-width:90px;}
+.appearanceInline .w-mid{min-width:170px;}
+
+/* 行全体で余白を使い切る */
+.appearanceInline .item:nth-child(1){flex:2.2;}
+.appearanceInline .item:nth-child(2){flex:1.2;}
+.appearanceInline .item:nth-child(3){flex:1.2;}
+.appearanceInline .item:nth-child(4){flex:1.2;}
+.appearanceInline .item:nth-child(5){flex:2.3;}
+.appearanceInline .item:nth-child(6){flex:2.6;}
+
+
+
+
+
+/* --- 好き・嫌い・口調（調整） --- */
+.characterPreferenceGrid{
+    display:grid;
+    grid-template-columns:1fr 1fr 2fr;
+    gap:12px;
+    margin-top:2px;
+    width:100%;
+}
+
+.characterPreferenceGrid .inputGroup{
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+}
+
+.characterPreferenceGrid label{
+    margin-bottom:2px;
+}
+
+.characterPreferenceGrid input{
+    width:100%;
+}

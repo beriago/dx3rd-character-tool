@@ -1,0 +1,649 @@
+[
+
+  {
+    "id": "elementary_student",
+    "name": "小学生",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "知覚", "level": 2 },
+      { "name": "意志", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "情報:噂話", "level": 1 }
+    ]
+  },
+  {
+    "id": "junior_high_student",
+    "name": "中学生",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "知覚", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "RC", "level": 2 },
+      { "name": "情報:噂話", "level": 1 }
+    ]
+  },
+  {
+    "id": "high_school_student",
+    "name": "高校生",
+    "category": "一般",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "回避", "level": 1 },
+      { "name": "知覚", "level": 1 },
+      { "name": "RC", "level": 2 },
+      { "name": "情報:噂話", "level": 1 }
+    ]
+  },
+  {
+    "id": "delinquent_student",
+    "name": "不良学生",
+    "category": "一般",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "運転:", "level": 2 },
+      { "name": "知覚", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "情報:裏社会", "level": 1 }
+    ]
+  },
+  {
+    "id": "college_student",
+    "name": "大学生",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "回避", "level": 1 },
+      { "name": "運転:", "level": 2 },
+      { "name": "意志", "level": 1 },
+      { "name": "知識:", "level": 2 },
+      { "name": "情報:学問", "level": 1 }
+    ]
+  },
+  {
+    "id": "freeter",
+    "name": "フリーター",
+    "category": "一般",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "運転:", "level": 2 },
+      { "name": "意志", "level": 1 },
+      { "name": "知識:", "level": 2 },
+      { "name": "情報:ウェブ", "level": 1 }
+    ]
+  },
+  {
+    "id": "teacher",
+    "name": "教師",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "運転:", "level": 2 },
+      { "name": "知識:", "level": 2 },
+      { "name": "交渉", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:学問", "level": 1 }
+    ]
+  },
+  {
+    "id": "homemaker",
+    "name": "主婦・主夫",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 0, "mind": 0, "social": 1 },
+    "skills": [
+      { "name": "芸術:", "level": 2 },
+      { "name": "意志", "level": 1 },
+      { "name": "交渉", "level": 2 },
+      { "name": "情報:噂話", "level": 1 }
+    ]
+  },
+  {
+    "id": "ugn_child_a",
+    "name": "UGNチルドレンA",
+    "category": "UGN",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 2 },
+      { "name": "回避", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "ugn_child_b",
+    "name": "UGNチルドレンB",
+    "category": "UGN",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "回避", "level": 1 },
+      { "name": "射撃", "level": 2 },
+      { "name": "RC", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "ugn_child_c",
+    "name": "UGNチルドレンC",
+    "category": "UGN",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "回避", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "RC", "level": 2 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "ugn_agent_a",
+    "name": "UGNエージェントA",
+    "category": "UGN",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "回避", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "ugn_agent_b",
+    "name": "UGNエージェントB",
+    "category": "UGN",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "射撃", "level": 1 },
+      { "name": "知覚", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "ugn_agent_c",
+    "name": "UGNエージェントC",
+    "category": "UGN",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "意志", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "知識:", "level": 2 },
+      { "name": "調達", "level": 1 }
+    ]
+  },
+  {
+    "id": "ugn_agent_d",
+    "name": "UGNエージェントD",
+    "category": "UGN",
+    "ability": { "body": 0, "sense": 0, "mind": 0, "social": 1 },
+    "skills": [
+      { "name": "知覚", "level": 1 },
+      { "name": "交渉", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "ugn_branch_a",
+    "name": "UGN支部長A",
+    "category": "UGN",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "回避", "level": 1 },
+      { "name": "運転:", "level": 2 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "ugn_branch_b",
+    "name": "UGN支部長B",
+    "category": "UGN",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "回避", "level": 1 },
+      { "name": "射撃", "level": 1 },
+      { "name": "知覚", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "ugn_branch_c",
+    "name": "UGN支部長C",
+    "category": "UGN",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "RC", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "知識:", "level": 2 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "ugn_branch_d",
+    "name": "UGN支部長D",
+    "category": "UGN",
+    "ability": { "body": 0, "sense": 0, "mind": 0, "social": 1 },
+    "skills": [
+      { "name": "意志", "level": 1 },
+      { "name": "交渉", "level": 1 },
+      { "name": "調達", "level": 2 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "detective_police",
+    "name": "刑事",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "運転:", "level": 2 },
+      { "name": "射撃", "level": 1 },
+      { "name": "知覚", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:裏社会", "level": 1 }
+    ]
+  },
+  {
+    "id": "forensics",
+    "name": "鑑識",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "運転:", "level": 2 },
+      { "name": "知覚", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "知識:", "level": 2 },
+      { "name": "情報:裏社会", "level": 1 }
+    ]
+  },
+  {
+    "id": "lawyer",
+    "name": "弁護士",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 0, "mind": 0, "social": 1 },
+    "skills": [
+      { "name": "運転:", "level": 2 },
+      { "name": "意志", "level": 1 },
+      { "name": "知識:", "level": 2 },
+      { "name": "交渉", "level": 1 },
+      { "name": "情報:裏社会", "level": 1 }
+    ]
+  },
+  {
+    "id": "defense_force",
+    "name": "防衛隊員",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "回避", "level": 1 },
+      { "name": "運転:", "level": 2 },
+      { "name": "射撃", "level": 1 },
+      { "name": "情報:軍事", "level": 1 }
+    ]
+  },
+  {
+    "id": "mercenary",
+    "name": "傭兵",
+    "category": "一般",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "運転:", "level":2 },
+      { "name": "射撃", "level": 1 },
+      { "name": "知覚", "level": 1 },
+      { "name": "情報:軍事", "level": 1 }
+    ]
+  },
+  {
+    "id": "researcher",
+    "name": "研究者",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "知覚", "level": 1 },
+      { "name": "知識:", "level": 4 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:学問", "level": 1 }
+    ]
+  },
+  {
+    "id": "professor",
+    "name": "教授",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 0, "mind": 0, "social": 1 },
+    "skills": [
+      { "name": "意志", "level": 2 },
+      { "name": "知識:", "level": 2 },
+      { "name": "交渉", "level": 1 },
+      { "name": "情報:学問", "level": 1 }
+    ]
+  },
+  {
+    "id": "nurse",
+    "name": "看護師",
+    "category": "一般",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "知覚", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "知識:", "level": 2 },
+      { "name": "交渉", "level": 1 }
+    ]
+  },
+  {
+    "id": "doctor",
+    "name": "医者",
+    "category": "一般",
+    "ability": { "body": 0, "sense": 0, "mind": 0, "social": 1 },
+    "skills": [
+      { "name": "RC", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "知識:", "level": 4 },
+      { "name": "情報:学問", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_agent_a",
+    "name": "FHエージェントA",
+    "category": "FH",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "回避", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_agent_b",
+    "name": "FHエージェントB",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "射撃", "level": 1 },
+      { "name": "知覚", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_agent_c",
+    "name": "FHエージェントC",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "意志", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "知識:", "level": 2 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_agent_d",
+    "name": "FHエージェントD",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 0, "mind": 0, "social": 1 },
+    "skills": [
+      { "name": "知覚", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "交渉", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_child_a",
+    "name": "FHチルドレンA",
+    "category": "FH",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 2 },
+      { "name": "回避", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_child_b",
+    "name": "FHチルドレンB",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "回避", "level": 1 },
+      { "name": "射撃", "level": 2 },
+      { "name": "RC", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_child_c",
+    "name": "FHチルドレンC",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "回避", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "RC", "level": 2 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_cell_leader_a",
+    "name": "FHセルリーダーA",
+    "category": "FH",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "回避", "level": 1 },
+      { "name": "運転:", "level": 2 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_cell_leader_b",
+    "name": "FHセルリーダーB",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "回避", "level": 1 },
+      { "name": "射撃", "level": 1 },
+      { "name": "知覚", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_cell_leader_c",
+    "name": "FHセルリーダーC",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "RC", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "知識:", "level": 2 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_cell_leader_d",
+    "name": "FHセルリーダーD",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 0, "mind": 0, "social": 1 },
+    "skills": [
+      { "name": "意志", "level": 1 },
+      { "name": "交渉", "level": 1 },
+      { "name": "調達", "level": 2 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "renegade_being_a",
+    "name": "レネゲイドビーイングA",
+    "category": "RB",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "回避", "level": 1 },
+      { "name": "射撃", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "renegade_being_b",
+    "name": "レネゲイドビーイングB",
+    "category": "RB",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "射撃", "level": 1 },
+      { "name": "知覚", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "renegade_being_c",
+    "name": "レネゲイドビーイングC",
+    "category": "RB",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "知覚", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "交渉", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "renegade_being_d",
+    "name": "レネゲイドビーイングD",
+    "category": "RB",
+    "ability": { "body": 0, "sense": 0, "mind": 0, "social": 1 },
+    "skills": [
+      { "name": "回避", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "交渉", "level": 1 },
+      { "name": "情報:UGN", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_mercenary_a",
+    "name": "FHマーセナリーA",
+    "category": "FH",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "運転:", "level": 2 },
+      { "name": "知覚", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_mercenary_b",
+    "name": "FHマーセナリーB",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "射撃", "level": 1 },
+      { "name": "知覚", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_mercenary_c",
+    "name": "FHマーセナリーC",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "知覚", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "知識:", "level": 2 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_mercenary_d",
+    "name": "FHマーセナリーD",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 0, "mind": 0, "social": 1 },
+    "skills": [
+      { "name": "意志", "level": 1 },
+      { "name": "交渉", "level": 1 },
+      { "name": "調達", "level": 1 },
+      { "name": "情報:", "level": 2 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_renegade_being_a",
+    "name": "FHレネゲイドビーイングA",
+    "category": "FH",
+    "ability": { "body": 1, "sense": 0, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "回避", "level": 1 },
+      { "name": "射撃", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_renegade_being_b",
+    "name": "FHレネゲイドビーイングB",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 1, "mind": 0, "social": 0 },
+    "skills": [
+      { "name": "白兵", "level": 1 },
+      { "name": "射撃", "level": 1 },
+      { "name": "知覚", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_renegade_being_c",
+    "name": "FHレネゲイドビーイングC",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 0, "mind": 1, "social": 0 },
+    "skills": [
+      { "name": "知覚", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "交渉", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  },
+  {
+    "id": "fh_renegade_being_d",
+    "name": "FHレネゲイドビーイングD",
+    "category": "FH",
+    "ability": { "body": 0, "sense": 0, "mind": 0, "social": 1 },
+    "skills": [
+      { "name": "回避", "level": 1 },
+      { "name": "RC", "level": 1 },
+      { "name": "意志", "level": 1 },
+      { "name": "交渉", "level": 1 },
+      { "name": "情報:FH", "level": 1 }
+    ]
+  }
+]
